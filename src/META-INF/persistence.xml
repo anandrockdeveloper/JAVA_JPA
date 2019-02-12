@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JpaProject">
+	
+		<class>com.anand.jpa.PersonTable</class>
+		<class>com.anand.jpacollection.PersonalDetails</class>
+		<class>com.anand.jpacollection.PAddress</class>
+		<class>com.anand.jpamapping.Student</class>
+		<class>com.anand.jpamapping.Library</class>
+		
+
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@anandawsorcl.cclxuiolk2pk.ap-southeast-1.rds.amazonaws.com:1521:ANANDDB" />
+			<property name="javax.persistence.jdbc.user" value="masterawsdbacc" />
+			<property name="javax.persistence.jdbc.password"
+				value="masterawsdbacc" />
+			<property name="javax.persistence.jdbc.driver"
+				value="oracle.jdbc.driver.OracleDriver" />
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.ddl-generation"
+				value="create-tables" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
